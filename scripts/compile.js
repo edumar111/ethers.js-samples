@@ -26,8 +26,7 @@ var input = {
 };
 
 const contractCompiled = JSON.parse(solc.compile(JSON.stringify(input)));
-//console.log("contractCompiled===================")
-//console.log(contractCompiled)
+
 const storage =contractCompiled.contracts["Storage.sol"].Storage;
 //console.log("storage===================")
 //console.log(storage.evm.bytecode.object)

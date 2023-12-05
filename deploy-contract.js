@@ -6,7 +6,6 @@ const PRIVATE_KEY='271017cf1ba652a229390636ce6a6ac0e8870224557dffd72d25956e1e30b
 //console.log(ABI)
 //console.log(bytecode)
 
-
 const deploy = async function () {
     try {
         const provider = new JsonRpcProvider(`http://localhost:8545`)

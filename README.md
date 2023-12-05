@@ -12,3 +12,4 @@
 
     npm i solc@0.6.0 --save
 
+## install lanchain 
