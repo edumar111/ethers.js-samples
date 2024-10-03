@@ -34,3 +34,5 @@ const sendTx = async function () {
 sendTx()
 //0x37cc6b5f94bf0ce35885c82937710f0d7df348a4033078d960209a11fdc16a3f
 // curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x37cc6b5f94bf0ce35885c82937710f0d7df348a4033078d960209a11fdc16a3f"],"id":53}' http://127.0.0.1:8545
+
+// curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x37cc6b5f94bf0ce35885c82937710f0d7df348a4033078d960209a11fdc16a3f"],"id":53}' http://127.0.0.1:8545

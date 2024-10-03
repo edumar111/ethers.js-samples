@@ -30,8 +30,9 @@ const contractCompiled = JSON.parse(solc.compile(JSON.stringify(input)));
 const storage =contractCompiled.contracts["Storage.sol"].Storage;
 //console.log("storage===================")
 //console.log(storage.evm.bytecode.object)
-//console.log(chalk.green(storage.evm.bytecode.object));
-//console.log(chalk.cyan(JSON.stringify(storage.abi)));
+console.log(storage.evm.bytecode.object);
+console.log("=========================")
+console.log(JSON.stringify(storage.abi));
 module.exports = contractCompiled.contracts["Storage.sol"].Storage;
 
 

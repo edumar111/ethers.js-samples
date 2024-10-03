@@ -2,10 +2,10 @@ const { ethers ,JsonRpcProvider} = require("ethers");
 const usersContractCompile = require('./scripts/compile');
 const ABI = usersContractCompile.abi;
 
-const provider =  new JsonRpcProvider(`http://localhost:8545`)
+const provider =  new JsonRpcProvider(`http://35.185.112.219`)
 
 
-const address = '0x03B36E1062EE09D2C4A7d4b2fd1Bead2fc73EFe1' // DAI Contract
+const address = '0x1Eb9aCF008233a181e0970ba18191A82a37e150D' // DAI Contract
 const contract = new ethers.Contract(address, ABI, provider)
 
 const main = async () => {
